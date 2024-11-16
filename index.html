@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Ruedas</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concesionaria Sobre Ruedas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Galería de Autos - Sobre Ruedas</h1>
-    </header>
+  <header>
+    <div class="logo">
+      <h1>Concesionaria Sobre Ruedas</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#autos">Autos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="gallery">
-            <h2>Nuestros Autos</h2>
-            <div class="gallery-container">
-                <img src="Img/Auto 1.webp" alt="Auto 1">
-                <img src="Img/Auto2.jpg" alt="Auto 3">
-                <img src="Img/Auto 3.jpg" alt="Auto 4">
-                <img src="Img/auto 4.avif" alt="Auto 2">
-            </div>
-        </section>
-    </main>
+  <main>
+    <section id="autos">
+      <h2>Nuestros Autos</h2>
+      <div class="galeria">
+        <img src="Img/Auto 1.webp" alt="Auto 1">
+        <img src="Img/Auto 3.jpg" alt="Auto 2">
+        <img src="Img/auto 4.avif" alt="Auto 3">
+        <img src="Img/Auto2.jpg" alt="Auto 4">
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Sobre Ruedas</p>
-    </footer>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Planes de Ahorro</li>
+        <li>Ventas de Autos Nuevos y Usados</li>
+        <li>Repuestos Originales</li>
+        <li>Servicio de Postventa</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="whatsapp">
+        <h3>O chatea con nosotros:</h3>
+        <a href="https://wa.me/3534280177" target="_blank">WhatsApp Administración</a>
+        <a href="https://wa.me/3535642633" target="_blank">WhatsApp Ventas</a>
+        <a href="https://wa.me/3535694404" target="_blank">WhatsApp Repuestos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Concesionaria Sobre Ruedas. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
