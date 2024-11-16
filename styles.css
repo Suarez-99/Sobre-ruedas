@@ -1,53 +1,83 @@
-/* Estilos generales */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-main {
-    padding: 20px;
-}
-
-h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilo para la galería */
-.gallery-container {
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.gallery-container img {
-    max-width: 300px;
-    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .galeria img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.gallery-container img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+  }
+  
+  form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .whatsapp a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #003366;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+    padding: 10px;
+  }
+  
